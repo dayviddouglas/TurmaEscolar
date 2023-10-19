@@ -82,14 +82,22 @@ router.post('/', async (req,res) =>{
   router.delete('/:id', async (req, res)=>{
      const id = req.params.id
 
-     try {
-         const turma = await Turma.deleteOne({_id: id})
-           if (!turma){
+     const turmaEncontrada = await Turma.findOne({_id: id})
+    
+          if (!turmaEncontrada){
                res.status(422).json({msg:"Turma was not found!"})
                return
            }
+     
+
+     try {
+
+               const turma = await Turma.deleteOne({_id: id})
 
            res.status(200).json({ message: "The Turma was deleted successfully"});
+
+          
+         
 
           
      } catch (err) {
