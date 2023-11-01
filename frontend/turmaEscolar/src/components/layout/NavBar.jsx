@@ -15,7 +15,7 @@ const NavBar = () => {
     <> 
 <Box mt={90} ml={80}>
 
-<Breadcrumb spacing='8px' separator={<ChevronRightIcon color='gray.500' />} >
+<Breadcrumb spacing='8px' separator={<ChevronRightIcon color='#F0FFFF' />} >
   <BreadcrumbItem isCurrentPage>
     <Link to='/'>
     <BreadcrumbLink >Home</BreadcrumbLink>

@@ -6,7 +6,7 @@ const Header = () => {
     
   return (
     <div>
-      <Box w="100vw" backgroundColor='#aeb068' padding='30' >
+      <Box w="100vw" padding='30'  bgGradient='linear( #8B4513 0%, #FFDEAD 25%, #DEB887 50%)' >
 
         
 <Flex >
