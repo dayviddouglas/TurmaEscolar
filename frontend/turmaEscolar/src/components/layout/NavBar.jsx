@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom'
 const NavBar = () => {
   return (
     <> 
-<Box mt={90}>
+<Box mt={90} ml={80}>
 
 <Breadcrumb spacing='8px' separator={<ChevronRightIcon color='gray.500' />} >
   <BreadcrumbItem isCurrentPage>
@@ -23,15 +23,23 @@ const NavBar = () => {
     
   </BreadcrumbItem>
 
+
+  <BreadcrumbItem >
+<Link to='/sobre'>
+<BreadcrumbLink>Sobre</BreadcrumbLink>
+</Link>
+
+    
+  </BreadcrumbItem>
+
+
   <BreadcrumbItem>
   <Link to='/turmas'>
-    <BreadcrumbLink href='#'>Turmas</BreadcrumbLink>
+    <BreadcrumbLink>Turmas</BreadcrumbLink>
     </Link>
   </BreadcrumbItem>
 
-  <BreadcrumbItem >
-    <BreadcrumbLink href='#'>Contato</BreadcrumbLink>
-  </BreadcrumbItem>
+  
 </Breadcrumb>
 
 </Box>

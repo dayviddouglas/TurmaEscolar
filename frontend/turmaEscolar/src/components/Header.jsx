@@ -3,9 +3,10 @@ import NavBar from "../components/layout/NavBar";
 import { Flex, Box} from '@chakra-ui/react'
 
 const Header = () => {
+    
   return (
     <div>
-      <Box w='100%' backgroundColor='#aeb068' padding='30' >
+      <Box w="100vw" backgroundColor='#aeb068' padding='30' >
 
         
 <Flex >
