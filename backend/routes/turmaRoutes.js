@@ -9,7 +9,7 @@ router.post('/', async (req,res) =>{
 
     // req.body
     // {name: "1º ano A", category: "Ensino Fundamental I", status: true}
-       const {name,category, status} = req.body;
+       const {name,category, status, photo} = req.body;
     
        if (!name  || !category){
             res.status(422).json({ message: "The name and category are mandatory"})
@@ -17,7 +17,7 @@ router.post('/', async (req,res) =>{
        }
     
        const turma = {
-        name,category,status,
+        name,category,status,photo,
        }
     
        try {
@@ -56,10 +56,10 @@ router.post('/', async (req,res) =>{
   router.patch('/:id', async (req, res) =>{
 
      const id = req.params.id
-     const {name,category, status} = req.body;
+     const {name,category, status, photo} = req.body;
 
      const turma = {
-         name, category, status,
+         name, category, status,photo,
      }
 
      try {

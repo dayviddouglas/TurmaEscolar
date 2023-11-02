@@ -1,24 +1,31 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box,Text, Image } from "@chakra-ui/react";
 
-const Turma = ({nome, categoria, status}) => {
+const Turma = ({nome, categoria, status , foto}) => {
   return (
     <div>
-        <Box>
-         <Text>
-            {nome}
+        
+        <Box w={250} h={40} mt={5} >
+
+         <Box boxSize='200'>
+        <Image src={foto} alt='Imagem da Turma' />
+        </Box>
+
+        <Text>
+           Turma: {nome}
          </Text>
 
          <Text>
-            {categoria}
+            Categoria: {categoria}
          </Text>
 
             {status === true ? (
-                <Text> Ativada </Text>
+                <Text> Status: Ativada </Text>
             ):(
-                <Text> Desativada </Text>
+                <Text> Status: Desativada </Text>
             )}
         
         </Box>
+        
     </div>
   )
 }

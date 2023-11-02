@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import {Text, Box} from '@chakra-ui/react'
+import {Text, Box, Flex} from '@chakra-ui/react'
 import Turma from "../components/Turma";
 import { useState, useEffect } from "react";
 import axios from 'axios';
@@ -35,10 +35,14 @@ const Turmas = () => {
             Turmas:
          </Text>
    
+      
+      <Flex justifyContent="space-around" wrap="wrap" gap={3}>
       {turmas.map(
-        turma =>  <Turma key={turma.id} nome={turma.name} categoria={turma.category} status={turma.status}  >   </Turma>
+        turma => 
+           <Turma key={turma.id} nome={turma.name} categoria={turma.category} status={turma.status} foto={turma.photo}></Turma>
       )
       }
+      </Flex>
          
          </Box>
     </div>
