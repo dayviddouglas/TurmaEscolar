@@ -3,6 +3,7 @@ import {Text, Box, Flex} from '@chakra-ui/react'
 import Turma from "../components/Turma";
 import { useState, useEffect } from "react";
 import axios from 'axios';
+import Footer from '../components/Footer';
 
 const Turmas = () => {
 
@@ -36,15 +37,31 @@ const Turmas = () => {
          </Text>
    
       
-      <Flex justifyContent="space-around" wrap="wrap" gap={3}>
-      {turmas.map(
-        turma => 
-           <Turma key={turma.id} nome={turma.name} categoria={turma.category} status={turma.status} foto={turma.photo}></Turma>
-      )
-      }
-      </Flex>
+      
          
          </Box>
+
+     
+       
+
+       <Flex justify='space-evenly' wrap='wrap'>
+          {turmas.map(
+            turma => 
+              <Turma key={turma.id} nome={turma.name} categoria={turma.category} status={turma.status} foto={turma.photo}></Turma>
+          )
+          }
+          </Flex>
+
+      
+      
+
+      
+      
+
+      
+          <Footer/>
+
+  
     </div>
   )
 }

@@ -1,4 +1,4 @@
-
+import Footer from '../components/Footer';
 import {Text, Box} from '@chakra-ui/react'
 import Header from '../components/Header'
 
@@ -16,6 +16,7 @@ const Sobre = () => {
         É com grande orgulho e satisfação que nos dirigimos a vocês para apresentar a nossa Escola, uma instituição de ensino que tem servido à comunidade desde o ano de 2006. Ao longo dos anos, temos nos dedicado incansavelmente ao desenvolvimento acadêmico e pessoal dos alunos do infantil até o ensino fundamental II.
         </Text>
         </Box>
+        <Footer/>
     </div>
   )
 }

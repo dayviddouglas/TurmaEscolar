@@ -4,7 +4,7 @@ const Turma = ({nome, categoria, status , foto}) => {
   return (
     <div>
         
-        <Box w={250} h={40} mt={5} >
+        <Box w={250} h={40} mt={5}  >
 
          <Box boxSize='200'>
         <Image src={foto} alt='Imagem da Turma' />
@@ -21,7 +21,7 @@ const Turma = ({nome, categoria, status , foto}) => {
             {status === true ? (
                 <Text> Status: Ativada </Text>
             ):(
-                <Text> Status: Desativada </Text>
+              <Text color='red'> Status: Desativada </Text>
             )}
         
         </Box>
