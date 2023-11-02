@@ -1,10 +1,11 @@
-import Header from "../components/Header"
+
 import {Text, Box} from '@chakra-ui/react'
+import Header from '../components/Header'
 
 const Sobre = () => {
   return (
     <div>
-        <Header/>
+         <Header/>
 
         <Box mt={10} w={500} h={50} mx="auto" >
         <Text as='b' >

@@ -1,5 +1,5 @@
-import Logo from "../components/layout/Logo";
-import NavBar from "../components/layout/NavBar";
+import  Logo  from "./layout/Logo";
+import NavBar from "./layout/NavBar";
 import { Flex, Box} from '@chakra-ui/react'
 
 const Header = () => {
